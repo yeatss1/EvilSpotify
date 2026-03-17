@@ -18,8 +18,6 @@ def nom_fenetre():
         print(titre)
         if titre in OPS :
             return titre  
-        #elif titre == "Spotify Free" :
-        #    return "Spotify Free"
     return None
 
 def kill_spotify():
@@ -34,10 +32,11 @@ def launch_spotify():
 def resume_spotify():   
     pyautogui.press('playpause')                 
 
+def skip_song():
+    pyautogui.press('nexttrack')        
+
 with open ("count.txt",'r') as f:
     texte = f.read()
-    #print(len(texte))
-    #print(texte[27:])
     k = int(texte[27:])
 
 while True:
@@ -51,7 +50,5 @@ while True:
         launch_spotify()
         time.sleep(3)
         resume_spotify()
-
-    #if (nom_atm == "Spotify Free"):
-    #    resume_spotify()
+        skip_song()
     time.sleep(3)
