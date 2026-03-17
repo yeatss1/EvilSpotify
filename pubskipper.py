@@ -10,7 +10,7 @@ for str in nomPubs_file :
     OPS.add(str.strip()) 
 print(f"pubs connues ; {OPS}")
 
-SPOTIFY_PATH = r"C:\Users\Igor\AppData\Roaming\Spotify\Spotify.exe" 
+SPOTIFY_PATH = r"C:\PATH\Spotify.exe" 
 def nom_fenetre():
     titres = gw.getAllTitles()
     print('TITRES : ////////////////////////////')
