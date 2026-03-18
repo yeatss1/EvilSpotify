@@ -5,7 +5,7 @@ import time
 import pyautogui
 
 OPS = set()
-nomPubs_file = open("nomPubs.txt")
+nomPubs_file = open("nomPubs.txt",encoding = 'utf-8')
 for str in nomPubs_file :
     OPS.add(str.strip()) 
 print(f"pubs connues ; {OPS}")
